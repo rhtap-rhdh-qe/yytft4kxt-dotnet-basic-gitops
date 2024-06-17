@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: yytft4kxt-dotnet-basic-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/yytft4kxt-dotnet-basic

@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: yytft4kxt-dotnet-basic-gitops
+  description: This is GitOps manifest for yytft4kxt-dotnet-basic   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: yytft4kxt-dotnet-basic
+    janus-idp.io/tekton: yytft4kxt-dotnet-basic 
+    backstage.io/kubernetes-id: yytft4kxt-dotnet-basic 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:yytft4kxt-dotnet-basic
